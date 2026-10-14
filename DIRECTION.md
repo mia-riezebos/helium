@@ -55,6 +55,7 @@ The [native integration decision](https://github.com/mia-riezebos/helium/issues/
 [Define panel, group, routing and shared-pin behavior](https://github.com/mia-riezebos/helium/issues/6) settles colours, routing and organization defaults.
 [Choose keyboard, mouse and horizontal-tab interactions](https://github.com/mia-riezebos/helium/issues/7) settles bindings, gestures and horizontal group presentation.
 Required tab trees supersede the earlier tabs-as-leaves assumption. Their relationship with named groups remains undecided.
+[Identify native opener tracking and tab-tree behavior](https://github.com/mia-riezebos/helium/issues/12) is complete. Native source attribution is reusable; temporary opener links do not supply durable tab ancestry.
 The fork is `mia-riezebos/helium`, cloned at `~/Development/imputnet/helium`.
 The upstream repository is `imputnet/helium`. No browser build or implementation exists yet.
 Existing Helium tree-tab proposals provide references, but do not supply recursive named groups or the complete agreed scope.
@@ -66,7 +67,6 @@ Existing Helium tree-tab proposals provide references, but do not supply recursi
 
 ## Next step
 
-Investigate [Identify native opener tracking and tab-tree behavior](https://github.com/mia-riezebos/helium/issues/12).
 Resolve [Define tab trees and automatic child placement](https://github.com/mia-riezebos/helium/issues/11) through the wayfinder map.
 Then settle restoration and acceptance evidence.
 Assess profile-per-panel feasibility only; its implementation remains a stretch goal.
