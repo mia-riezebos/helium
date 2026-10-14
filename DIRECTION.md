@@ -33,7 +33,7 @@ Panels must work without profile assignment. Profile isolation must remain intac
 ## Current state
 
 Feasibility research exists in `helium-feasibility.md`.
-The fork is `mia-riezebos/helium`, cloned at `~/Development/mia-riezebos/helium`.
+The fork is `mia-riezebos/helium`, cloned at `~/Development/imputnet/helium`.
 The upstream repository is `imputnet/helium`. No browser build or implementation exists yet.
 Existing Helium tree-tab proposals provide references, but do not supply recursive named groups or the complete agreed scope.
 
