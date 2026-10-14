@@ -5,8 +5,15 @@ Terms for the tab organization built into Helium's toolbar.
 ## Language
 
 **Panel**:
-A collection of tabs and nested groups shown together in the tab toolbar.
+A destination in the tab toolbar or vertical sidebar's navigation.
+A panel can show a tab collection or another browser view, such as bookmarks.
+
+**Tab panel**:
+A panel containing tabs and nested groups shown together.
 _Avoid_: Profile, account
+
+**Bookmarks panel**:
+A panel showing the browser profile's bookmarks.
 
 **Profile**:
 A Chromium browsing identity with its own website sessions, settings, and profile data.
@@ -17,10 +24,10 @@ A named node that can contain tabs and other groups recursively.
 _Avoid_: Flat Chrome group
 
 **Group path**:
-The ordered names of a group's ancestors and the group itself within a panel, such as `Clients > Acme`.
+The ordered names of a group's ancestors and the group itself within a tab panel, such as `Clients > Acme`.
 
 **Shared pin**:
-A pinned tab available in every panel.
+A pinned tab available in every tab panel.
 
 **Routing rule**:
-A domain or URL-path match that assigns a tab to a panel.
+A domain or URL-path match that assigns a tab to a tab panel.
