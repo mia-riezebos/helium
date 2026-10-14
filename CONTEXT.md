@@ -16,6 +16,9 @@ _Avoid_: Panel
 A named node that can contain tabs and other groups recursively.
 _Avoid_: Flat Chrome group
 
+**Group path**:
+The ordered names of a group's ancestors and the group itself within a panel, such as `Clients > Acme`.
+
 **Shared pin**:
 A pinned tab available in every panel.
 

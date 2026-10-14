@@ -11,7 +11,8 @@ The first release targets the agreed features below rather than complete Sideber
 - Panels hold separate tab collections. Horizontal scrolling over the tab toolbar switches panels.
 - Support both horizontal and vertical tab modes, with vertical mode driving the design.
 - Route tabs automatically to panels using configurable domain or URL-path rules. Routing behavior remains configurable.
-- Routing rules can move a tab alone or preserve its group name in the destination. Create missing destination groups.
+- Routing rules default to moving a tab alone, without its group. A rule can instead preserve its full group-name path.
+- Group-preserving routing reuses matching destination groups and creates missing ancestors, such as `Clients > Acme`.
 - Domain rules include subdomains by default. Path rules match prefixes. An exact host filter narrows domain matching.
 - Pinned tabs appear in every panel.
 - Tabs and groups have configurable colours, shown as a small stripe on the left.
@@ -38,6 +39,7 @@ Panels must work without profile assignment. Profile isolation must remain intac
 
 The Chromium capability, Sidebery behavior, and profile feasibility investigations are complete and indexed in the [Native tab panels and nested groups](https://github.com/mia-riezebos/helium/issues/1) map.
 The [native integration decision](https://github.com/mia-riezebos/helium/issues/5) adopts existing Chromium and Helium functionality as the baseline.
+[Define panel, group, routing and shared-pin behavior](https://github.com/mia-riezebos/helium/issues/6) settles colours, routing and organization defaults.
 The fork is `mia-riezebos/helium`, cloned at `~/Development/imputnet/helium`.
 The upstream repository is `imputnet/helium`. No browser build or implementation exists yet.
 Existing Helium tree-tab proposals provide references, but do not supply recursive named groups or the complete agreed scope.
@@ -49,6 +51,6 @@ Existing Helium tree-tab proposals provide references, but do not supply recursi
 
 ## Next step
 
-Resolve [panel, group, routing and shared-pin behavior](https://github.com/mia-riezebos/helium/issues/6) through the wayfinder map.
-Then settle input actions, restoration and acceptance evidence.
+Resolve [Choose keyboard, mouse and horizontal-tab interactions](https://github.com/mia-riezebos/helium/issues/7) through the wayfinder map.
+Then settle restoration and acceptance evidence.
 Assess profile-per-panel feasibility only; its implementation remains a stretch goal.
