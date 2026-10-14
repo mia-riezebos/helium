@@ -11,8 +11,11 @@ The first release targets the agreed features below rather than complete Sideber
 - Panels hold separate tab collections. Horizontal scrolling over the tab toolbar switches panels.
 - Support both horizontal and vertical tab modes, with vertical mode driving the design.
 - Route tabs automatically to panels using configurable domain or URL-path rules. Routing behavior remains configurable.
+- Routing rules can move a tab alone or preserve its group name in the destination. Create missing destination groups.
+- Domain rules include subdomains by default. Path rules match prefixes. An exact host filter narrows domain matching.
 - Pinned tabs appear in every panel.
 - Tabs and groups have configurable colours, shown as a small stripe on the left.
+- An explicit tab colour wins over group colours. Other grouped tabs use their group colour.
 - Support configurable keybindings and mouse actions. The full Sidebery interaction catalogue is unnecessary.
 - Preserve organization across browser restarts and session restoration.
 
