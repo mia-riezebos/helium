@@ -22,8 +22,8 @@ The first release targets the agreed features below rather than complete Sideber
 - Integrate into the existing native tab toolbar. Keep the extension side panel available independently.
 - Browser changes are required; a standalone Chrome extension cannot deliver the intended integration.
 - Use cross-platform browser architecture. Platform-exclusive window tabbing is excluded.
-- Reuse Sidebery code where appropriate. An internal WebUI hosted in the native toolbar is a candidate, not a validated decision.
-- Sidebery's existing behavior and options are the reference for unspecified details. Check its implementation before asking product questions; ask when the proposed behavior differs or research leaves a real ambiguity.
+- Extend Chromium's native tab model, controls, and behavior wherever possible. Minimize replacement code and duplicated state to reduce future maintenance.
+- Chromium's existing behavior guides unspecified details. Use Sidebery as the reference for required capabilities Chromium lacks; check its implementation before asking product questions.
 
 ## Stretch goal
 
@@ -39,10 +39,11 @@ Existing Helium tree-tab proposals provide references, but do not supply recursi
 
 ## Open decisions
 
-- The initial configurable keyboard and mouse action catalogue, derived from Sidebery's existing actions.
+- The initial configurable keyboard and mouse action catalogue beyond Chromium's existing interactions.
 - How shared pins behave between panels assigned to different profiles, if the stretch goal proceeds.
 
-## Next proof
+## Next step
 
-Embed the tab interface in Helium's toolbar and connect it to real tabs.
-Verify recursive grouping, panel switching, and restoration before broadening the implementation.
+Chart an implementation-ready design through the [Native tab panels and nested groups](https://github.com/mia-riezebos/helium/issues/1) wayfinder map.
+Investigate Chromium reuse and integration gaps before choosing an approach.
+Assess profile-per-panel feasibility only; its implementation remains a stretch goal.
