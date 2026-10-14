@@ -11,7 +11,8 @@ The first release targets the agreed features below rather than complete Sideber
 - Named groups can contain other groups and tabs recursively.
 - Tab panels hold separate tab collections. Horizontal scrolling over the tab toolbar switches panels.
 - Panel navigation changes one panel per swipe, ignores momentum, and stops at either end.
-- Support a bookmarks panel at the left edge of the vertical sidebar's panel sequence.
+- Support a bookmarks panel in the vertical sidebar. Panel order is configurable, with no fixed bookmarks or history bookends.
+- Browser-view panels appear only in vertical mode. Horizontal mode keeps the existing native bookmarks/history entry points.
 - Support both horizontal and vertical tab modes, with vertical mode driving the design.
 - Horizontal mode shows nested groups in one row with the usual inline expand/collapse controls.
 - Route tabs automatically to tab panels using configurable domain or URL-path rules. Routing behavior remains configurable.
