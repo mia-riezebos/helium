@@ -9,8 +9,20 @@ A destination in the tab toolbar or vertical sidebar's navigation.
 A panel can show a tab collection or another browser view, such as bookmarks.
 
 **Tab panel**:
-A panel containing tabs and nested groups shown together.
+A panel containing tab trees and nested groups shown together.
 _Avoid_: Profile, account
+
+**Tab**:
+A page represented in a browser window. In a tab tree, a tab can have child tabs.
+
+**Tab tree**:
+The parent-child organization of tabs in a tab panel.
+
+**Parent tab**:
+The immediate tab ancestor of another tab in the tab tree.
+
+**Opener tab**:
+The tab from which a new tab is opened.
 
 **Bookmarks panel**:
 A panel showing the browser profile's bookmarks.
