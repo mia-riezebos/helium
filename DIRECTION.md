@@ -17,7 +17,9 @@ The first release targets the agreed features below rather than complete Sideber
 - Pinned tabs appear in every panel.
 - Tabs and groups have configurable colours, shown as a small stripe on the left.
 - An explicit tab colour wins over group colours. Other grouped tabs use their group colour.
-- Support configurable keybindings and mouse actions. The full Sidebery interaction catalogue is unnecessary.
+- Expose every in-scope action to keybinding configuration. Added actions start unassigned; choose their defaults through use.
+- Allow middle-click and double-click remapping on tabs and group headers, preserving native defaults. Defer extra mouse gestures.
+- Full Sidebery interaction parity remains outside scope.
 - Preserve organization across browser restarts and session restoration.
 
 ## Constraints
@@ -46,7 +48,8 @@ Existing Helium tree-tab proposals provide references, but do not supply recursi
 
 ## Open decisions
 
-- The initial configurable keyboard and mouse action catalogue beyond existing Chromium and Helium interactions.
+- Whether existing browser shortcuts remain assigned while added organization actions start unassigned.
+- Panel gesture cadence and boundaries, and horizontal presentation of recursive groups.
 - How shared pins behave between panels assigned to different profiles, if the stretch goal proceeds.
 
 ## Next step
