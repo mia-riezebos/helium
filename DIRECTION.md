@@ -9,6 +9,8 @@ The first release targets the agreed features below rather than complete Sideber
 
 - Named groups can contain other groups and tabs recursively.
 - Support tree-style tabs. Opening a link in a new tab automatically makes it a child of its source tab.
+- Groups contain whole tab trees and other groups. Tabs contain only child tabs; a tree stays within one group and tab panel.
+- Ordinary new-tab commands create tabs without a parent. Provide an explicit New child tab action, preserving native placement and focus where compatible.
 - Tab panels hold separate tab collections. Horizontal scrolling over the tab toolbar switches panels.
 - Panel order is configurable.
 - Panel navigation changes one panel per swipe, ignores momentum, and stops at either end.
@@ -54,7 +56,7 @@ The Chromium capability, Sidebery behavior, and profile feasibility investigatio
 The [native integration decision](https://github.com/mia-riezebos/helium/issues/5) adopts existing Chromium and Helium functionality as the baseline.
 [Define panel, group, routing and shared-pin behavior](https://github.com/mia-riezebos/helium/issues/6) settles colours, routing and organization defaults.
 [Choose keyboard, mouse and horizontal-tab interactions](https://github.com/mia-riezebos/helium/issues/7) settles bindings, gestures and horizontal group presentation.
-Required tab trees supersede the earlier tabs-as-leaves assumption. Their relationship with named groups remains undecided.
+Required tab trees supersede the earlier tabs-as-leaves assumption. Groups wrap whole trees; ordinary new tabs have no parent.
 [Identify native opener tracking and tab-tree behavior](https://github.com/mia-riezebos/helium/issues/12) is complete. Native source attribution is reusable; temporary opener links do not supply durable tab ancestry.
 The fork is `mia-riezebos/helium`, cloned at `~/Development/imputnet/helium`.
 The upstream repository is `imputnet/helium`. No browser build or implementation exists yet.
@@ -62,7 +64,7 @@ Existing Helium tree-tab proposals provide references, but do not supply recursi
 
 ## Open decisions
 
-- Tab-tree hierarchy, automatic child placement and branch behavior alongside groups, pins and routing.
+- Remaining automatic child placement and branch behavior alongside groups, pins and routing.
 - How shared pins behave between panels assigned to different profiles, if the stretch goal proceeds.
 
 ## Next step

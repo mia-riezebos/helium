@@ -16,7 +16,13 @@ _Avoid_: Profile, account
 A page represented in a browser window. In a tab tree, a tab can have child tabs.
 
 **Tab tree**:
-The parent-child organization of tabs in a tab panel.
+The parent-child organization of tabs within one tab panel and one group, or outside all groups.
+
+**Root tab**:
+A tab with no parent tab in the tab tree.
+
+**Tab branch**:
+A tab together with all its descendants in the tab tree.
 
 **Parent tab**:
 The immediate tab ancestor of another tab in the tab tree.
@@ -32,7 +38,7 @@ A Chromium browsing identity with its own website sessions, settings, and profil
 _Avoid_: Panel
 
 **Group**:
-A named node that can contain tabs and other groups recursively.
+A named node containing whole tab trees and other groups recursively. A group cannot sit beneath a tab.
 _Avoid_: Flat Chrome group
 
 **Group path**:
